@@ -27,5 +27,9 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add oled.json
-          git commit -m "Auto update oled.json"
-          git push
+          if ! git diff --cached --quiet; then
+            git commit -m "Auto update oled.json"
+            git push
+          else
+            echo "Değişiklik yok, commit atılmadı."
+          fi
