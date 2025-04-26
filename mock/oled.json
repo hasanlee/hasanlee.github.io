@@ -1,0 +1,8 @@
+{
+  "success": true,
+  "error": "",
+  "data": {
+    "message": "This is test",
+    "description": "This is success result test data"
+  }
+}
