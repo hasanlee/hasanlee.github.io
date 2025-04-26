@@ -1,0 +1,31 @@
+name: Update OLED JSON
+
+on:
+  schedule:
+    - cron: '*/10 * * * *' # Her 10 d çalışır
+  workflow_dispatch: # Elle çalıştırabilmen için
+
+jobs:
+  update-oled:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Repo'yu çek
+        uses: actions/checkout@v4
+
+      - name: Node.js ortamını kur
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: OLED JSON dosyasını güncelle
+        run: |
+          npm install
+          node update-oled.js
+
+      - name: Değişiklikleri commitle ve pushla
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add oled.json
+          git commit -m "Auto update oled.json"
+          git push
