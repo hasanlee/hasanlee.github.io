@@ -26,8 +26,8 @@ https.get(URL, (res) => {
     let oledData = JSON.parse(fs.readFileSync(filePath, 'utf8'));
 
     // Alanları güncelle
-    oledData.message = "Baku, AZ";
-    oledData.description = description;
+    oledData.data.message = "Baku, AZ";
+    oledData.data.description = description;
 
     // Dosyaya yaz
     fs.writeFileSync(filePath, JSON.stringify(oledData, null, 2));
