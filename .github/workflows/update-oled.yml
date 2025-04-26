@@ -5,6 +5,9 @@ on:
     - cron: '*/10 * * * *' # Her 10 d çalışır
   workflow_dispatch: # Elle çalıştırabilmen için
 
+permissions:
+  contents: write 
+  
 jobs:
   update-oled:
     runs-on: ubuntu-latest
