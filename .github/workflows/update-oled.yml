@@ -19,7 +19,6 @@ jobs:
 
       - name: OLED JSON dosyasını güncelle
         run: |
-          npm install
           node update-oled.js
 
       - name: Değişiklikleri commitle ve pushla
