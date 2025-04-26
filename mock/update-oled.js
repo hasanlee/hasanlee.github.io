@@ -7,7 +7,7 @@ const CITY = 'Baku';
 const URL = `https://api.openweathermap.org/data/2.5/weather?q=${CITY}&appid=${API_KEY}&units=metric&lang=en`;
 
 // JSON dosya yolu
-const filePath = './oled.json';
+const filePath = path.join(__dirname, 'oled.json');
 
 // Hava durumu bilgisini çek
 https.get(URL, (res) => {
