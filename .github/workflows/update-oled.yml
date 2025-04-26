@@ -19,7 +19,7 @@ jobs:
 
       - name: OLED JSON dosyasını güncelle
         run: |
-          node update-oled.js
+          node mock/update-oled.js
 
       - name: Değişiklikleri commitle ve pushla
         run: |
