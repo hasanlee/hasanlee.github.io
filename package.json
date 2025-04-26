@@ -1,0 +1,13 @@
+{
+  "name": "oled-updater",
+  "version": "1.0.0",
+  "description": "A script to update OLED JSON with weather data",
+  "main": "update-oled.js",
+  "scripts": {
+    "start": "node update-oled.js"
+  },
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "https": "^1.0.0"
+  }
+}
