@@ -1,5 +1,6 @@
 const fs = require('fs');
 const https = require('https');
+const path = require('path');
 
 // API bilgileri
 const API_KEY = '4d54f3eab89770c849fd9da97f724df0'; // buraya kendi API Key'ini koyacaksın
