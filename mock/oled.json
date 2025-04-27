@@ -1,8 +1,18 @@
 {
   "success": true,
   "error": "",
-  "data": {
-    "message": "Baku, AZ",
-    "description": "few clouds, 24°C"
-  }
+  "data": [
+    {
+        "id":1,
+        "title":"Mesaj 1",
+        "body":"Mesaj detal 1",
+        "read":false
+    },
+    {
+        "id":2,
+        "title":"Mesaj 2",
+        "body":"Mesaj detal 2",
+        "read":false
+    },
+  ]
 }
