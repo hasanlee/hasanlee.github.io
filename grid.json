@@ -28,6 +28,20 @@
                 "sort": "asc"
             }
         ],
+        "measures": [
+            {
+                "uniqueName": "Price",
+                "aggregation": "sum"
+            },
+            {
+                "uniqueName": "Discount",
+                "aggregation": "sum"
+            },
+            {
+                "uniqueName": "Quantity",
+                "aggregation": "sum"
+            }
+        ],
         "expands": {
             "expandAll": false,
             "rows": [
